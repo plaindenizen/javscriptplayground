@@ -16,4 +16,31 @@ console.log(num2)
 
 var num3 = 30
 console.log(num3)
+
+const fullname = 'jacob barber'
+
+const workplace = 'nmit'
+
+console.log(fullname + ' ' + workplace) //concatenation
+
+console.log(`my full name is ${fullname} and i work at ${workplace}`)
+
+const working = true
+const notworking = false
+
+if(working) {
+    console.log(fullname)
+}
+
+let a = 2
+let result
+
+if (a > 0) {
+    result = 'positive';
+    console.log(result)
+
+} else {
+    result = 'NOT positive';
+}
+return result;
 //
