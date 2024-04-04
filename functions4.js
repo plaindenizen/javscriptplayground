@@ -61,12 +61,12 @@
 
 //Ex nestArray([1,2,6,3]) -> [1, [2, [6, [3]]]]
 
-// function nestArray(arr) {
-//     if(arr.length == 1) return arr
-//     let temp = []
-//     for(let i =0; i < arr.length; i++) temp.push(arr[i])
-//     return [arr[0], nestArray(temp)]
-// }
+function nestArray(arr) {
+    if(arr.length == 1) return arr
+    let temp = []
+    for(let i =0; i < arr.length; i++) temp.push(arr[i])
+    return [arr[0], nestArray(temp)]
+}
 
 //ES6
 
