@@ -1,22 +1,25 @@
-//create afunction that takes an array of stringified numbers as a parameter and return the numbers
-//Ex : ["1","3","6.7"] -> [1,3,6.7]
+// create afunction that takes an array of stringified numbers as a parameter and return the numbers
+// Ex : ["1","3","6.7"] -> [1,3,6.7]
 
-//ES6
+// ES6
 // let stringifier = arr => arr.map(e => +e)
 
 // console.log(stringifier(["1","3","6.7"]))
 
-// //ES5
+//ES5
 
-// function arraymabob(arr) {
-//     let temp = []
-//     for(let i = 0; i< arr.length; i++) {
-//         temp[i] = JSON.parse(arr[i])
-//     }
-//     return temp
-// }
+function arraymabob(arr) {
+    let temp = []
+    for(let i = 0; i< arr.length; i++) {
+        temp[i] = JSON.parse(arr[i])
+    }
+    return temp
+}
 
-// console.log(arraymabob(["1","3","6.7","37"]))
+console.log(arraymabob(["1","3","6.7","37"]))
+console.log(["1","3","6.7","37"])   //strings are always printed with their respective quotation marks in the terminal.
+
+//console.log() must always contain those brackets to print anything 
 
 // create a function that returns (true) if all parameters are truthful and false otherwise.
 //Ex. checkParam(true, true, true) -> true
@@ -53,8 +56,8 @@
 //Ex: checkArray([1,3,5,7,10],2) -> false
 
 //ES6
-const checkArray = (arr,el) => {
-    return arr.includes(el)
-}
+// const checkArray = (arr,el) => {
+//     return arr.includes(el)
+// }
 
-console.log(checkArray([]))
+// console.log(checkArray([]))

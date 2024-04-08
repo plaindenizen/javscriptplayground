@@ -8,11 +8,11 @@
 
 // seq = [1,2,3]
 
-// function test() {
-//     return (seq(1) + seq(2))
-// }
+function test() {
+    return (seq(1) + seq(2));
+}
 
-// console.log(test)
+console.log(test([1,2,3]))
 
 // write a function that takes an array and checks whether the sum of its elements is even or odd, the value should return 'even' or 'odd'
 
@@ -35,17 +35,20 @@
 // //['ali', 3, 'isaac', 5, 9] -> [3, 5, 9]
 // arr = ['ali', 3, 'isaac', 5, 9]
 
-// function wordwrecker(word) { //'word' here is a 'parameter'
+// arr = ['ali', 3, 'isaac', 5, 9, 27]
+// funnylist = ['lia', 2, 'casi', 10, 4]
+
+// function wordwrecker(word) {    //'word' here is a 'parameter'
 //     let integer = []
-//     for (let i =0; i < arr.length; i++) {
-//         if(Number.isInteger(arr[i])) {
-//             integer.push(arr[i])
+//     for (let i =0; i <funnylist.length; i++) {   //arr here is just name of variable. It is not a specific bit of syntax or whatever.
+//         if(Number.isInteger(funnylist[i])) {
+//             integer.push(funnylist[i])
 //         }
 //     }
 //     return integer
 // }
 
-// console.log(wordwrecker(['ali', 3, 'isaac', 5, 9]))
+// console.log(wordwrecker(arr))   //second brackets here after wordwrecker can be emmpty. exisiting arrays can be put there but will be overwritten by wordwrecker function.
 
 // create a function that takes two strings (p1 and p2) as arguments and returs a string stating the winner (rock,paper or scissors)
 
@@ -83,9 +86,9 @@
 
 
 // //ANCHOR - JS built in function includes
-function rpsThree(p1, p2) {
-    const wins = ['RockScissors', 'PaperRock', 'ScissorsPaper']
-    return p1 === p2 ? "It's a draw" : `the winner is ${wins.includes(p1 + p2) ? 'p1' : 'p2'}`
-}
+// function rpsThree(p1, p2) {
+//     const wins = ['RockScissors', 'PaperRock', 'ScissorsPaper']
+//     return p1 === p2 ? "It's a draw" : `the winner is ${wins.includes(p1 + p2) ? 'p1' : 'p2'}`
+// }
 
-console.log(rpsThree('Scissors', 'Paper'))
+// console.log(rpsThree('Scissors', 'Paper'))
