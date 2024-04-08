@@ -33,9 +33,18 @@ console.log(x)
 //other math can be done using multiplication assignment operator, division assignment operator, subtraction assignment operator.
 
 
-let length = 16;            //this data type is a number
-let lastName = "johnny";    //this data type is a string
-const x = {
-    firstName: 'john',
-    lastName: 'doe'
-};                          //this data type is an object
+// let length = 16;            //this data type is a number
+// let lastName = "johnny";    //this data type is a string
+// const x = {
+//     firstName: 'john',
+//     lastName: 'doe'
+// };                          //this data type is an object
+
+
+//executing a function can be as simple as simply calling for it on its own like so
+
+function myFunction() {
+    console.log("Hello world");
+}
+
+myFunction()    //this prints "Hello World" in the terminal
