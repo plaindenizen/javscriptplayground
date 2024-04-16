@@ -113,17 +113,91 @@
 //ANCHOR - Prompt test
 // let sign = prompt("who are you?");
 
-const readline = require('readline')
+// const readline = require('readline')
 
-const r1 = readline.Interface({     //NOTE - 'require' is a global method that allows us to import external modules into nodeJS.
-    input: process.stdin,
-    output: process.stdout
-})
+// const r1 = readline.Interface({     //NOTE - 'require' is a global method that allows us to import external modules into nodeJS.
+//     input: process.stdin,
+//     output: process.stdout
+// })
 
-r1.question('whats your name?', (answer) => {
-    console.log(answer.concat(' is your name'))
-    process.exit()      //if process.exit is left out user is stuck in terminal
-}) 
+// r1.question('whats your name?', (answer) => {
+//     console.log(answer.concat(' is your name'))
+//     process.exit()      //if process.exit is left out user is stuck in terminal
+// }) 
 
 // sequence2 = 'after breakpoint string'
 // console.log(sequence2)
+
+//ANCHOR - 16-04-2024
+const guy = {
+    fName: john='john',
+    height: 5.8,
+    age: 1,
+    things: ['gun','bicycle',5,'battery']
+}
+let popped = guy.things.pop()    //pop method takes the last element of an array and returns it.
+guy.things.push(popped)          //push method adds another element to an aexisting array.
+guy.things.splice(3)             //splice method removes a specified element(s) from an existing array. 
+guy.things.sort()                //sort method sorts an array of strings alphabetically. integers are sorted before strings.
+
+function guyprinter() {
+    console.log(guy.fName)
+    console.log('mans age is ' + (guy.age))
+    console.log(guy.height)
+    console.log(guy.things)
+    console.log('amt of things on this man is ' + (guy.things.length))
+}
+
+guyprinter()
+const d = new Date();
+year = d.getFullYear();           
+console.log(year)
+
+// console.log(guy.fName,guy.age, guy.things.length)
+
+function termRule() {
+    console.log("------------------------------")
+}
+
+termRule()
+
+//ANCHOR - JS Math methods
+x = Math.max(10,20)
+console.log(x + " is the larger of 10, 20")
+
+y = Math.round(3.14)
+console.log(y + " is rounded from 3.14")
+
+z = Math.sqrt(9)
+console.log(z + " is the square root of 9")
+
+termRule()
+
+//ANCHOR - Comparisons
+let w = 10;
+let l = 5;
+console.log(w>l)        //greater than ">" operand returns true if left operand is greater than rigth operand. otherwise returns false. strings can also be compared.
+
+l = 10;                 //NOTE - if a variable is supposed to be changing throughout the code then it must be declared with 'let'.
+console.log(w == l)     //equality "==" operator checks both operands for equality. operands may be different data types(eg 1 and '1' would return true). This line should return true.
+
+console.log(w!=l)       //inequality operator checks whether its two operands are equal or not and returns a boolean.
+
+let age = 23;
+let votable = (age<18) ? "Too young":"Old enough";  //NOTE - conditional ternery operator '?' takes 3 operands. Firstly the condition, followed by the operator, an expression if true, and an expression if false. True and false expressions are seperated by a colon.
+console.log(votable);
+
+termRule()
+
+//ANCHOR - Conditions
+if (age>18) {
+    console.log("I am older than 18")
+}
+
+if (age>l) {
+    console.log("I am older than 10");
+} else {
+    console.log("I am not older than ")
+}
+
+//ANCHOR - Switch
