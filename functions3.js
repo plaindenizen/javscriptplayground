@@ -5,16 +5,16 @@
 // Create a function that takes an array of numbers or letters and returns a string.
 //arraytostring([1,2,3,4,5]) -> "12345"
 
-// function arraytostring(arr) {
-//     let result = ""
-//     for(let i =0; i < arr.length; i++) {
-//         result = result + arr[i]
-//     }
-//     return result
+function arraytostring(arr) {
+    let result = ""
+    for(let i =0; i < arr.length; i++) {
+        result = result + arr[i]
+    }
+    return result
 
-// }
+}
 
-// console.log(arraytostring([6,7,"Ali","Sonny",10]))
+console.log(arraytostring([6,7,"Ali","Sonny",10]))
 
 //create a function that takes an array with integers, transform that array into a mirror.
 //arraytomirror([0,2,4,6,8]) output -> [0,2,4,6,8,6,4,2,0]
@@ -62,7 +62,7 @@
 
 // console.log(arraycountdown(5))
 
-//ES6
-const countdownarray = (num) => Array.from(Array(num+1).keys()).reverse()
-console.log(countdownarray(10))
-// '=>' means 'function'
+// //ES6
+// const countdownarray = (num) => Array.from(Array(num+1).keys()).reverse()
+// console.log(countdownarray(10))
+// // '=>' means 'function'

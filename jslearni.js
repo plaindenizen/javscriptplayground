@@ -1,3 +1,7 @@
+function termRule() {
+    console.log("------------------------------")
+}       //(moved this function to the top of file for conveiniece sake, I didn't write this first.)
+
 //Starting here with the W3schools JS tutorial.
 //Javascript is one of the three languages web developers must learn.
 //HTML defines the content. CSS specifies the layout. Javascript to program the behaviour.
@@ -129,75 +133,138 @@
 // console.log(sequence2)
 
 //ANCHOR - 16-04-2024
-const guy = {
-    fName: john='john',
-    height: 5.8,
-    age: 1,
-    things: ['gun','bicycle',5,'battery']
-}
-let popped = guy.things.pop()    //pop method takes the last element of an array and returns it.
-guy.things.push(popped)          //push method adds another element to an aexisting array.
-guy.things.splice(3)             //splice method removes a specified element(s) from an existing array. 
-guy.things.sort()                //sort method sorts an array of strings alphabetically. integers are sorted before strings.
+// const guy = {
+//     fName: john='john',
+//     height: 5.8,
+//     age: 1,
+//     things: ['gun','bicycle',5,'battery']
+// }
+// let popped = guy.things.pop()    //pop method takes the last element of an array and returns it.
+// guy.things.push(popped)          //push method adds another element to an aexisting array.
+// guy.things.splice(3)             //splice method removes a specified element(s) from an existing array. 
+// guy.things.sort()                //sort method sorts an array of strings alphabetically. integers are sorted before strings.
 
-function guyprinter() {
-    console.log(guy.fName)
-    console.log('mans age is ' + (guy.age))
-    console.log(guy.height)
-    console.log(guy.things)
-    console.log('amt of things on this man is ' + (guy.things.length))
-}
+// function guyprinter() {
+//     console.log(guy.fName)
+//     console.log('mans age is ' + (guy.age))
+//     console.log(guy.height)
+//     console.log(guy.things)
+//     console.log('amt of things on this man is ' + (guy.things.length))
+// }
 
-guyprinter()
-const d = new Date();
-year = d.getFullYear();           
-console.log(year)
+// guyprinter()
+// const d = new Date();
+// year = d.getFullYear();           
+// console.log(year)
 
-// console.log(guy.fName,guy.age, guy.things.length)
+// // console.log(guy.fName,guy.age, guy.things.length)
 
-function termRule() {
-    console.log("------------------------------")
-}
+// function termRule() {
+//     console.log("------------------------------")
+// }
+
+// termRule()
+
+// //ANCHOR - JS Math methods
+// x = Math.max(10,20)
+// console.log(x + " is the larger of 10, 20")
+
+// y = Math.round(3.14)
+// console.log(y + " is rounded from 3.14")
+
+// z = Math.sqrt(9)
+// console.log(z + " is the square root of 9")
+
+// termRule()
+
+// //ANCHOR - Comparisons
+// let w = 10;
+// let l = 5;
+// console.log(w>l)        //greater than ">" operand returns true if left operand is greater than rigth operand. otherwise returns false. strings can also be compared.
+
+// l = 10;                 //NOTE - if a variable is supposed to be changing throughout the code then it must be declared with 'let'.
+// console.log(w == l)     //equality "==" operator checks both operands for equality. operands may be different data types(eg 1 and '1' would return true). This line should return true.
+
+// console.log(w!=l)       //inequality operator checks whether its two operands are equal or not and returns a boolean.
+
+// let age = 23;
+// let votable = (age<18) ? "Too young":"Old enough";  //NOTE - conditional ternery operator '?' takes 3 operands. Firstly the condition, followed by the operator, an expression if true, and an expression if false. True and false expressions are seperated by a colon.
+// console.log(votable);
+
+// termRule()
+
+// //ANCHOR - Conditions
+// if (age>18) {
+//     console.log("I am older than 18")
+// }
+
+// if (age>l) {
+//     console.log("I am older than 10");
+// } else {
+//     console.log("I am not older than ")
+// }
 
 termRule()
-
-//ANCHOR - JS Math methods
-x = Math.max(10,20)
-console.log(x + " is the larger of 10, 20")
-
-y = Math.round(3.14)
-console.log(y + " is rounded from 3.14")
-
-z = Math.sqrt(9)
-console.log(z + " is the square root of 9")
-
-termRule()
-
-//ANCHOR - Comparisons
-let w = 10;
-let l = 5;
-console.log(w>l)        //greater than ">" operand returns true if left operand is greater than rigth operand. otherwise returns false. strings can also be compared.
-
-l = 10;                 //NOTE - if a variable is supposed to be changing throughout the code then it must be declared with 'let'.
-console.log(w == l)     //equality "==" operator checks both operands for equality. operands may be different data types(eg 1 and '1' would return true). This line should return true.
-
-console.log(w!=l)       //inequality operator checks whether its two operands are equal or not and returns a boolean.
-
-let age = 23;
-let votable = (age<18) ? "Too young":"Old enough";  //NOTE - conditional ternery operator '?' takes 3 operands. Firstly the condition, followed by the operator, an expression if true, and an expression if false. True and false expressions are seperated by a colon.
-console.log(votable);
-
-termRule()
-
-//ANCHOR - Conditions
-if (age>18) {
-    console.log("I am older than 18")
-}
-
-if (age>l) {
-    console.log("I am older than 10");
-} else {
-    console.log("I am not older than ")
-}
 
 //ANCHOR - Switch
+//NOTE - 17 04 2024
+
+let b = "Bloodmoon"
+let e = "Eclipse"
+
+let tEvent = e
+switch(tEvent) {
+    case "Bloodmoon":
+        console.log("everything is red because it is bloodmoon")
+        break;
+    case "Eclipse":
+        console.log("Its is sppoky out because it is eclipse")
+        break;
+    default:
+        console.log("The event is normal")
+}
+
+//ANCHOR - For Loops
+// {} curly braces represent a blovk statement.
+let i;
+for (i=0; i<10; i++) {
+    console.log(i)
+}       //this for loop spits out numbers 0-9. Each integer is on its own line.
+
+let r = '';
+for (p=0; p<10; p++) {
+    console.log(r)
+}       //this for loop spits out 10 empty strings, each on their own line.
+
+let t = '';
+for (u=0; u<10; u++) {
+    t = t+u
+ //   console.log(t)    //enabling a consolelog here inside the block statement prints t everytime loop cycle.
+}
+console.log(t)          //having it here after the for loop has reached 10 just prints the finished loop on a single line.
+
+let meals = ["cereal", "food", "notfood", "realfood"]
+
+for (x of meals) {
+    console.log(x)
+}
+//console.log(x)
+
+termRule()
+
+//ANCHOR - Break Loops
+for (i = 0; i < 10; i++) {
+    if (i == 5) {
+        break           //break statement stops the loop entirely.
+    }
+} console.log(i)
+
+for (l = 0; l < 20; l++) {
+    if (l==10) {
+        continue;       //continue statement skips current iteration of the loop when triggered. In this case it skips console logging the value.
+    }
+    if (l==15) {
+        console.log("l is 15")
+    }
+    console.log(l)
+}
